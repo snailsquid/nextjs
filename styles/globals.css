@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url(../fonts/Montserrat.ttf) format('truetype');
+}
+
+.montserrat {
+    font-family: Montserrat
+}
+
 html,
 body {
   padding: 0;
