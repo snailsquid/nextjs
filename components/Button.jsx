@@ -10,14 +10,18 @@ export default function Button({
   bold,
 }) {
   let classNames = "px-4 py-2 transition-all rounded-xl montserrat ";
-  const acl = (props) => (classNames += props);
+  const acl = props => (classNames += props);
   const otherClass = "hover:-translate-y-1 transition-all";
   if (color) {
     acl(` text-${color}`);
   } else {
     acl(" text-white");
   }
-  if (fill) acl(` bg-${fill}`);
+  if (fill=='theme-orange') {
+    acl(` bg-theme-orange`);
+  }else{
+    acl(' bg-transparent')
+  }
   if (outline) acl(" border");
   if (hovbold) {
     acl(" hover:font-bold");
