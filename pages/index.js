@@ -5,9 +5,9 @@ import Home from "../components/Home";
 function App() {
   return (
     <div className="App">
-      <Background color="blue" etc=" flex-col">
-        <Navbar />
-        <Home />
+      <Background color={'blue'}>
+        <Navbar/>
+        <Home/>
       </Background>
     </div>
   );
