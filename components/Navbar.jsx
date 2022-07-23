@@ -8,16 +8,16 @@ export default function Navbar() {
       <div className="mx-10 my-5 flex-row justify-between w-full flex items-center">
         <Logo />
         <div className="flex flex-row">
-          <Button href="#" hovbold>
+          <Button href="#" hovbold size={'small'}>
             FAQ
           </Button>
-          <Button href="#" hovbold>
+          <Button href="#" hovbold size={'small'}>
             Maps
           </Button>
-          <Button href="#" hovbold>
+          <Button href="#" hovbold size={'small'}>
             Categories
           </Button>
-          <Button href="#" bold fill="theme-orange" color="black">
+          <Button href="#" bold fill="theme-orange" size={'small'} color="black">
             Login
           </Button>
         </div>

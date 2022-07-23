@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 export default function maps() {
   return (
     <div>
-        <Background color={'blue'}>
+        <Background color={'white'}>
             <Navbar/>
             <Home/>
         </Background>

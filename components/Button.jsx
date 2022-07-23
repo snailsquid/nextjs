@@ -8,10 +8,17 @@ export default function Button({
   href,
   hovbold,
   bold,
+  size,
+  etc
 }) {
-  let classNames = "px-4 py-2 transition-all rounded-xl montserrat ";
+  let classNames = "transition-all rounded-xl montserrat ";
   const acl = props => (classNames += props);
   const otherClass = "hover:-translate-y-1 transition-all";
+  if(size){
+    if(size=='small') {
+      acl(' px-4 py-2 text-m')
+    }
+  }
   if (color) {
     acl(` text-${color}`);
   } else {
@@ -21,6 +28,9 @@ export default function Button({
     acl(` bg-theme-orange`);
   }else{
     acl(' bg-transparent')
+  }
+  if(etc) {
+    acl(etc)
   }
   if (outline) acl(" border");
   if (hovbold) {
