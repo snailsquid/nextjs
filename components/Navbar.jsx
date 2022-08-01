@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function Navbar() {
   return (
     <div className="w-full flex">
-      <div className="mx-10 my-5 flex-row justify-between w-full flex items-center">
+      <div className="sm:mx-10 mx-5 my-5 flex-row justify-between w-full flex items-center">
         <Logo />
         <div className="flex flex-row">
           <Button href="#" hovbold size={'small'}>
