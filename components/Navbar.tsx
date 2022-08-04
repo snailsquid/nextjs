@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import Button from "./Button";
 
-export default function Navbar(props:{children?:any}) {
+export default function Navbar() {
   return (
     <div className="w-full flex">
       <div className="sm:mx-10 mx-5 my-5 flex-row justify-between w-full flex items-center">
