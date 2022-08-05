@@ -28,7 +28,7 @@ export default function Home() {
               objectFit="cover"
               layout="fill"
               alt="background pic"
-              className="absolute z-10 opacity-70 rounded-xl sm:rounded-3xl"
+              className="absolute z-10 opacity-80 rounded-xl sm:rounded-3xl"
             />
           </div>
         </div>

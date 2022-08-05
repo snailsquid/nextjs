@@ -22,7 +22,7 @@ export default function SearchBar() {
 
   return (
     <div className="text-lg montserrat font-semibold flex flex-row bg-white w-full justify-between mt-5 rounded-full">
-                <span className=" text-theme-gray">
+                <span className=" text-theme-gray w-full">
                   <input
                     type="text"
                     onChange={e=>{setSearch(e.currentTarget.value)}}
