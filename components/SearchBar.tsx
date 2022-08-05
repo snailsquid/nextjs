@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import Link from 'next/link'
 
 export default function SearchBar() {
@@ -10,12 +10,12 @@ export default function SearchBar() {
   }
 
   useEffect(()=>{
-    document.getElementById('search').addEventListener('keypress', (event)=>{
+    document.getElementById('search')!.addEventListener('keypress', (event)=>{
         console.log(event.key)
         if(event.key=='Enter'){
 
             event.preventDefault();
-            document.getElementById('searchButton').click();
+            document.getElementById('searchButton')!.click();
         }
     })
   })
@@ -25,14 +25,13 @@ export default function SearchBar() {
                 <span className=" text-theme-gray w-full">
                   <input
                     type="text"
-                    onChange={e=>{setSearch(e.currentTarget.value)}}
+                    onChange={(e:any)=>{setSearch(e.currentTarget.value)}}
                     id="search"
                     placeholder="type a keyword"
                     className="w-full rounded-full py-1 px-3 focus:outline-none"
                   />
                 </span>
                 <div
-                  href=""
                   className="bg-theme-orange flex items-center justify-center rounded-full px-5 text-black"
                 >
                     <Link href={goMap()} passHref>

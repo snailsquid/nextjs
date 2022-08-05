@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Background({ color, children, etc }) {
+interface Background {
+    color:string,
+    children:any,
+    etc?:string,
+}
+
+export default function Background( {color , children , etc}:Background) : JSX.Element{
   let classNames = "fixed h-full w-full -z-10";
   classNames += etc;
   if (color === "white") classNames += " bg-theme-white";

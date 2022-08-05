@@ -1,5 +1,17 @@
 import React from "react";
 
+interface button {
+  children: any,
+  outline?: string,
+  fill?:string,
+  color?:string,
+  href?:string,
+  hovbold?:boolean,
+  bold?:boolean,
+  size?:string,
+  etc?:string
+}
+
 export default function Button({
   children,
   outline,
@@ -10,9 +22,9 @@ export default function Button({
   bold,
   size,
   etc
-}) {
+}:button) {
   let classNames = "transition-all rounded-xl montserrat ";
-  const acl = props => (classNames += props);
+  const acl = (props:string) => (classNames += props);
   const otherClass = "hover:-translate-y-1 transition-all";
   if(size){
     if(size=='small') {

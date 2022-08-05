@@ -5,13 +5,12 @@ import Home from "../components/Home";
 function App() {
   return (
     <div className="App">
-      <Background color={'blue'}>
+      <Background color={"blue"}>
         <Navbar/>
-        <Home/>
+        <Home />
       </Background>
     </div>
   );
 }
-
 
 export default App;

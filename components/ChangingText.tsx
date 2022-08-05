@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-let rendered = false;
-function ChangingText() {
+function ChangingText():JSX.Element {
   console.log("called");
   const [text, setText] = useState("Adventure");
 
