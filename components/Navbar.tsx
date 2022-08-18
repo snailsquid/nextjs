@@ -8,13 +8,13 @@ export default function Navbar() {
       <div className="lg:mx-10 mx-5 my-5 flex-row justify-between w-full flex items-center">
         <Logo />
         <div className="flex flex-row">
-          <Button href="#" hovbold size={"small"}>
+          <Button href="#" hovbold size={"small"} etc="lg:relative absolute opacity-0">
             FAQ
           </Button>
           <Button href="#" hovbold size={"small"}>
             Maps
           </Button>
-          <Button href="#" hovbold size={"small"}>
+          <Button href="#" hovbold size={"small"} etc="lg:relative absolute opacity-0">
             Categories
           </Button>
           <Button

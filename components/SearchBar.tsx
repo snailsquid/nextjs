@@ -25,7 +25,7 @@ export default function SearchBar({ separate }: any) {
       return (
         <div className="flex flex-row ml-3 w-fit">
           <a href="#" className="h-full flex items-center">
-            <Image src={Filter} layout="fixed" width="30px" height="30px" />
+            <Image src={Filter} layout="fixed" width="30px" height="30px" alt="filter"/>
           </a>
           <Link href={goMap()} passHref>
             <a id="searchButton">
@@ -52,7 +52,7 @@ export default function SearchBar({ separate }: any) {
     return <div></div>;
   };
   return (
-    <div className="lg:text-lg montserrat font-semibold flex flex-row text-5xl">
+    <div className="lg:text-lg montserrat font-semibold flex flex-row text-lg">
       <div className="flex flex-row bg-white w-full justify-between rounded-full">
         <span className=" text-theme-gray w-full">
           <input
@@ -63,7 +63,7 @@ export default function SearchBar({ separate }: any) {
             }}
             id="search"
             placeholder="type a keyword"
-            className="w-full rounded-full py-2 lg:py-1 px-5 lg:px-3 focus:outline-none"
+            className="w-full rounded-full py-1 px-3 lg:py-1 lg:px-3 focus:outline-none"
           />
         </span>
         <SearchButton />

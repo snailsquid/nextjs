@@ -11,8 +11,8 @@ export default function Background({
   children,
   etc,
 }: Background): JSX.Element {
-  let classNames = "fixed overflow-visible h-full w-full -z-10";
-  classNames += etc;
+  let classNames = "fixed overflow-auto h-full w-full overflow-x-hidden -z-10 scrollbar ";
+  if(etc) classNames += etc;
   if (color === "white") classNames += " bg-theme-white";
   if (color === "blue") classNames += " bg-theme-blue";
   return <div className={classNames}>{children}</div>;

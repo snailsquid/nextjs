@@ -13,12 +13,12 @@ export default function Home() {
       <div className=" -z-10 relative h-full w-full">
         <div className="w-full relative -z-0 h-full pb-12">
           <div className="-z-20 flex w-full h-full relative bg-black rounded-xl sm:rounded-3xl">
-            <div className="absolute drop-shadow-lg ml-5 text-8xl lg:text-6xl z-20 text-white flex-col w-full h-full top-0 left-0 flex justify-center">
+            <div className="absolute drop-shadow-lg ml-5 text-4xl lg:text-6xl z-20 text-white flex-col w-full h-full top-0 left-0 flex justify-center">
               <div>Searching for</div>
               <div>
                 <ChangingText /> Map?
               </div>
-              <div className="max-w-3xl lg:max-w-lg w-full lg:pr-10 mt-5">
+              <div className="max-w-sm pr-3 lg:max-w-lg w-full lg:pr-10 mt-5">
                 <SearchBar />
               </div>
             </div>

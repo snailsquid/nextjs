@@ -49,18 +49,21 @@ export default function SearchPage({ data }: any) {
   return (
     <Background color="blue">
       <Navbar />
-      <div className="flex flex-row md:mx-10 mx-5">
-        <div className="w-full">
-          <div className="p-3 bg-theme-sub-blue rounded-lg">
-            <SearchBar separate />
+      <div className="mx-5 h-auto">
+        <div className="flex flex-row w-full">
+          <div className="w-full">
+            <div className="p-3 bg-theme-sub-blue rounded-lg">
+              <SearchBar separate />
+            </div>
+            <div className="inline-grid grid-cols-1 grid-flow-row-dense gap-5 my-5 w-full">
+              {maps}
+            </div>
           </div>
-          <div className="inline-grid grid-cols-1 grid-flow-row-dense gap-5 my-5 w-full">
-            {maps}
+          <div className="bg-theme-sub-blue rounded-lg text-white text-2xl p-3 ml-5 lg:visible lg:relative absolute invisible">
+            <span className="px-10">Categories</span>
           </div>
         </div>
-        <div className="bg-theme-sub-blue rounded-lg text-white text-2xl p-3 ml-5 md:visible md:relative absolute invisible">
-          <span className="px-10">Categories</span>
-        </div>
+        <div className="text-theme-sub-white">Created by hex#7025 © 2022</div>
       </div>
     </Background>
   );
