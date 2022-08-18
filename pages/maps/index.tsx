@@ -1,14 +1,26 @@
 import React from "react";
-import Background from "../../components/Background";
-import Home from "../../components/Home";
-import Navbar from "../../components/Navbar";
+import { supabase } from "../../utils/supabaseClient";
+import SearchPage from "../../components/SearchPage";
 
-export default function maps() {
-  return (
-    <div>
-      <Background color={"blue"}>
-        <Navbar />
-      </Background>
-    </div>
-  );
+export async function getServerSideProps() {
+  const { data, error } = await supabase.from("maps").select();
+  return {
+    props: {
+      data: data,
+      err: error,
+    },
+  };
+}
+
+interface map {
+  data: object[];
+  err: any;
+}
+
+export default function Maps({ data, err }: map) {
+  if (err) {
+    console.log(`err : `);
+    console.log(err.message);
+  }
+  return <SearchPage data={data} />;
 }
